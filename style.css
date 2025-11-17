@@ -1,25 +1,64 @@
-body
-{
+body {
     background-color: cadetblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
 
-.ingredientsList
-{
+.spellBox {
+    background-color: antiquewhite;
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 24px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 
-    ul
+.buttons {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+input:hover {
+    opacity: 0.8;
+}
+
+.ingredientsList {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    ul 
     {
         background-color: antiquewhite;
+        width: 500px;
+        padding: 20px;
+        border-radius: 10px;
+        list-style-type: none;
+        font-size: 20px;
         text-align: center;
-        width: 800px;
-        height: 800px;
-        border-radius: 6px;
     }
-
 }
+
+

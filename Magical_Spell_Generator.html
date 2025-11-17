@@ -10,16 +10,21 @@
 <body>
 
     <h1>"Welcome to the Magical Spell Generator!"</h1>
+    
+    <div id="spellArea" class="spellBox">Press "Generate Spell" to begin!</div>
 
-    <div id="spellArea"></div>
-    <input type="button" value="Generate Spell">
-    <input type="reset" value="Reset">
+    <div class="buttons">
+        <input type="button" value="Generate Spell">
+        <input type="reset" value="Reset" id="resetBtn">
+    </div>
+
     <div id="ingredientsList" class="ingredientsList">
         <ul>
             <li>“Dragon Scale”</li>
             <li>“Phoenix Feather”</li>
             <li>“Unicorn Horn”</li>
         </ul>
-    </div>
+    </div>  
+    <script src="index.js"></script>
 </body>
 </html>
