@@ -1,4 +1,25 @@
 body
 {
     background-color: cadetblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+.ingredientsList
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    ul
+    {
+        background-color: antiquewhite;
+        text-align: center;
+        width: 800px;
+        height: 800px;
+        border-radius: 6px;
+    }
+
 }
