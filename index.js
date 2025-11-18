@@ -1,13 +1,13 @@
 const spellArea = document.getElementById("spellArea");
-const generateBtn = document.querySelector('input[type="button"]');
-const resetBtn = document.getElementById("resetBtn");
+const genB = document.querySelector('input[type="button"]');
+const resetB = document.getElementById("resetB");
 const ingredientsList = document.querySelectorAll("#ingredientsList li");
 
 const ingredients = Array.from(ingredientsList).map(item => item.innerText);
 
-const bgColors = ["cadetblue", "lightcoral", "plum", "lightgreen", "lightskyblue"];
+const backColors = ["cadetblue", "lightcoral", "plum", "lightgreen", "lightskyblue"];
 
-generateBtn.addEventListener("click", function () {
+genB.addEventListener("click", function () {
     let countdown = 3;
     const randomIngredient = ingredients[Math.floor(Math.random() * ingredients.length)];
 
@@ -29,7 +29,7 @@ generateBtn.addEventListener("click", function () {
     }, 1000);
 });
 
-resetBtn.addEventListener("click", () => {
+resetB.addEventListener("click", () => {
     spellArea.textContent = "Press \"Generate Spell\" to begin!";
     document.body.style.backgroundColor = "cadetblue";
 });
